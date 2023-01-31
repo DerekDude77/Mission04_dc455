@@ -7,7 +7,6 @@
     var intex = $("#intex").val() * 0.1;
 
     var grade = assignments + group + quizzes + midterm + final + intex;
-
     if (grade >= 94) {
         $("#finalGrade").text("Final Percentage: " + grade + " Final Grade: A");
     } else if (grade >= 90) {
