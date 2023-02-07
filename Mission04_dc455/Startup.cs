@@ -27,10 +27,6 @@ namespace Mission04_dc455
                 app.UseDeveloperExceptionPage();
             }
             app.UseStaticFiles();
-            //if (env.IsDevelopment())
-            //{
-            //    app.UseDeveloperExceptionPage();
-            //}
 
             app.UseRouting();
 
