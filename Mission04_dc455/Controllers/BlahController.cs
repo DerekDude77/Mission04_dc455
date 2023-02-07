@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Mission04_dc455.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,7 @@ namespace Mission04_dc455.Controllers
         }
 
         [HttpPost]
-        public IActionResult GradeCalculator(object model)
+        public IActionResult GradeCalculator(GradeCalculatorModel model)
         {
             return View();
         }

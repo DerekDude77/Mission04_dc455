@@ -4,22 +4,26 @@
 @{
 }
 
+@model GradeCalculatorModel;
+
 <h2>Grade Calculator</h2>
 <br />
 <p id="finalGrade"></p>
 <form method="post">
     <label>Assignments:</label>
-    <input id="assignments" name="assignments" /><br />
+    <input id="assignments" asp-for="assignments" /><br />
     <label>Group Project:</label>
-    <input id="group" name="group" /><br />
+    <input id="group" asp-for="group" /><br />
     <label>Quizzes:</label>
-    <input id="quizzes" name="quizzes" /><br />
+    <input id="quizzes" asp-for="quizzes" /><br />
     <label>Midterm Exam:</label>
-    <input id="midterm" name="midterm" /><br />
+    <input id="midterm" asp-for="midterm" /><br />
     <label>Final Exam:</label>
-    <input id="final" name="final" /><br />
+    <input id="final" asp-for="final" /><br />
     <label>INTEX:</label>
-    <input id="intex" name="intex" />
+    <input id="intex" asp-for="intex" />
     <!--Here I declare my button and call it "calculate grade"-->
     <input id="btnSend" type="submit" value="Calculate Grade" />
+
+    <div asp-validation-summary="All"></div>
 </form>
